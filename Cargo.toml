@@ -1,0 +1,16 @@
+[package]
+name = "etm_test"
+version = "0.0.0"
+edition = "2024"
+
+[dependencies]
+probe-rs = { git = "https://github.com/alphamaster32/probe-rs", branch = "etm" }
+
+[profile.dev]
+incremental = true
+
+[profile.release]
+# For now we don't need the LTO
+lto = false
+panic = "abort"
+incremental = true

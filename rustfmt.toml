@@ -1,0 +1,8 @@
+reorder_imports = true
+chain_width = 60
+fn_call_width = 60
+max_width = 79
+newline_style = "unix"
+edition = "2024"
+hard_tabs = false
+remove_nested_parens = true
